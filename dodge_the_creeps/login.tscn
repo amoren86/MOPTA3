@@ -1,0 +1,72 @@
+[gd_scene load_steps=3 format=3 uid="uid://7111jt3ncu8a"]
+
+[ext_resource type="Script" uid="uid://crxpsqwyn70cx" path="res://login.gd" id="1_cau7c"]
+[ext_resource type="FontFile" uid="uid://bgv586r20ps8e" path="res://fonts/Xolonium-Regular.ttf" id="2_3n56f"]
+
+[node name="Login" type="Node"]
+script = ExtResource("1_cau7c")
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.219608, 0.372549, 0.380392, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("2_3n56f")
+theme_override_font_sizes/font_size = 40
+text = "Dodge the
+Creeps"
+horizontal_alignment = 1
+
+[node name="EmailInput" type="LineEdit" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_3n56f")
+theme_override_font_sizes/font_size = 40
+placeholder_text = "Email"
+
+[node name="PasswordInput" type="LineEdit" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("2_3n56f")
+theme_override_font_sizes/font_size = 40
+placeholder_text = "Password"
+secret = true
+
+[node name="LoginButton" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("2_3n56f")
+theme_override_font_sizes/font_size = 40
+text = "Login"
+
+[node name="ErrorLabel" type="Label" parent="MarginContainer/VBoxContainer"]
+modulate = Color(1, 0, 0, 1)
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("2_3n56f")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3

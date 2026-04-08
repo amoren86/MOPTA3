@@ -1,0 +1,7 @@
+.godot/
+*.tmp
+*.import
+logs/
+export_presets.cfg
+build/
+dist/
