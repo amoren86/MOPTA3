@@ -1,8 +1,8 @@
 extends Node
 
 # --- Configuration Constants ---
-const API_KEY: String = "AIzaSyDbRvZzVWviyy3Ox8Gd_gUwBeD9D5ZbgEU"
-const PROJECT_ID: String = "dodge-the-creeps-36200"
+const API_KEY: String = "AIzaSyDbRvZzVWviyy3Ox8Gd_gUwBeD9D5ZbgEU" ### REPLACE WITH YOUR API KEY ###
+const PROJECT_ID: String = "dodge-the-creeps-36200" ### REPLACE WITH YOUR PROJECT ID ###
 
 # Base URLs for Firebase services
 const AUTH_URL: String = "https://identitytoolkit.googleapis.com/v1/accounts:"
